@@ -1,0 +1,54 @@
+.ttt-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.cell {
+  background: white;
+  border: 2px solid #555;
+  font-size: 2em;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell.filled {
+  cursor: not-allowed;
+  background: #eee;
+}
+
+.status {
+  margin-top: 10px;
+}
+
+.status button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.mode-toggle {
+  margin: 10px 0;
+}
+
+.mode-toggle button {
+  margin-left: 10px;
+  padding: 5px 8px;
+}
+
